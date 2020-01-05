@@ -5,8 +5,8 @@ import Logo from '../../elements/Logo/Logo';
 
 const Header = (props) => {
     return (
-        <header className={classes.Header}>
-            <Logo clicked={props.onClickHandler}/>
+        <header className={classes.Header}style={{backgroundColor: props.color}}>
+            <Logo colorScheme={'light'} clicked={props.onClickHandler}/>
         </header>
     )
 }
