@@ -15,11 +15,6 @@ function App() {
   const [loading , setLoading] = useState(false);
   const [error, setError] = useState(false)
   const [search, setSearch] = useState('')
-
-  
-
-
-
   // useEffect(  () => {
     
     const getWeather = async () => {
