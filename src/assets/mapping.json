@@ -1,0 +1,12 @@
+{
+    "colors": {
+        "default": "#C0B3BC",
+        "error": "#EF9A9A",
+        "Rain": "#18B2D8",
+        "Clear": "#FCC418",
+        "Thunderstorm": "#D9DEDF",
+        "Snow": "#D9DEDF",
+        "Drizzle": "#18B2D8",
+        "Clouds": "#FCC418"
+    }
+}

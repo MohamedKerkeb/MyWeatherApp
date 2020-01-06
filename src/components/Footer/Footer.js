@@ -3,10 +3,11 @@ import React from 'react'
 import Classes from './Footer.module.css'
 import Logo from '../../elements/Logo/Logo'
 
-const Footer = ( {onClickHandler} ) => {
+const Footer = (props ) => {
+    console.log(props)
     return (
         <footer className={Classes.Footer} >
-            <Logo onClick={onClickHandler, console.log('footer')}/>
+            <Logo colorScheme='dark' clicked={props.onClickHandler}/>
             <div className={Classes.Separator}></div>
         </footer>
     )

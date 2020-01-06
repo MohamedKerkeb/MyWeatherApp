@@ -10,6 +10,8 @@ import Card from "./elements/Card/Card";
 import ErrorNotice from "./components/ErrorNotice/ErrorNotice";
 import Footer from "./components/Footer/Footer";
 
+import mapping from "./assets/mapping.json";
+
 function App() {
   const [weather, setWeather] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -68,12 +70,16 @@ function App() {
   return (
     <div className="AppWrapper">
       {console.log(weather)}
-      <Header onClickHandler={() => tryAgain()} />
+      <Header
+        color={mapping.colors[error ? "error" : weather.description]}
+        onClickHandler={() => tryAgain()}
+      />
       <main className="AppMain">
         <SearchBar
           value={search}
           onChangeHandler={searchBar}
           onClickHandler={() => getWeather()}
+          error={error}
         />
         <Card>{cardContent}</Card>
       </main>

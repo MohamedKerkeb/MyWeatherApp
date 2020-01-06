@@ -11,3 +11,9 @@
 .Logo:hover {
     cursor: pointer;
 }
+.Light {
+    color: #ffffff;
+}
+.Dark {
+    color: #606060;
+}

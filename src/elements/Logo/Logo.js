@@ -1,10 +1,13 @@
 import React from 'react';
 
-import classes from './Logo.module.css'
+import Classes from './Logo.module.css'
 
-const Logo = () => {
+const Logo = (props) => {
+    let logoWithColorScheme = [
+        Classes.Logo, (props.colorScheme === 'dark') ? Classes.Dark : Classes.Light
+    ]
     return(
-        <h1 className={classes.Logo}>My Weather App</h1>
+        <h1 className={logoWithColorScheme.join(' ')} onClick={props.clicked}>My Weather App</h1>
     )
 };
 
